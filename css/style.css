@@ -11,8 +11,10 @@ body {
 
 #showcase {
   position: relative;
-  background: url("../img/mountains.jpg");
-  min-height: 600px; }
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+   background-size:cover;
+  min-height: 450px; }
   
   /* #showcase .col-lg-6 img {
 	max-height: 500px;  
