@@ -104,7 +104,7 @@
           <input id="lastName" name="lastName" type="email" class="form-control form-control-lg" placeholder="Email">
         </div>
         <div class="col-md-4">
-          <button id="getBook" type="submit" class="btn btn-info btn-lg btn-block" ><i class="fa fa-envelope-open-o"></i> Получить книгу</button>
+          <button id="getBook" type="submit" class="btn btn-info btn-lg btn-block" ><i class="fa fa-envelope-open-o"></i> Получить книгу на мейл</button>
         </div>
 		
       </div>
@@ -249,26 +249,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9">
-          <form action="mailto:malka.nessy@gmail.com" method="post" enctype="text/plain">
+          <form action="https://formspree.io/malka.nessy@gmail.com"
+      method="POST">
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" placeholder="Name">
+                <input name="name" type="text" class="form-control" placeholder="Name">
               </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="Email">
+                <input name="email" type="email" class="form-control" placeholder="Email">
               </div>
             </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                <textarea name="message" class="form-control" placeholder="Message" rows="5"></textarea>
               </div>
             </div>
-            <input type="submit" value="Отправить сообщение" class="btn btn-info btn-block btn-lg">
+            <input type="submit" value="Получить книгу на мейл" class="btn btn-info btn-block btn-lg">
           </form>
         </div>
         <div class="col-lg-3 align-self-center">
